@@ -1,5 +1,6 @@
 package junit5play;
 
+import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -39,6 +40,7 @@ public final class BeforeAndAfterTests {
   @Test
   @Disabled("Not implemented yet")
   void testShowSomething() {
+    fail("should not get here");
   }
 
   @Test

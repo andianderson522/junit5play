@@ -20,7 +20,6 @@ public class MainControllerTest {
 
   @Test
   public void greetingShouldReturnDefaultMessage() throws Exception {
-    System.out.println("PORT: " + this.port); // FIXME remove or make log statement
     assertTrue(this.restTemplate.getForObject("/", String.class).contains("Hello Controller"));
   }
 

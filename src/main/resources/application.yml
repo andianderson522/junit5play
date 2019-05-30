@@ -1,0 +1,24 @@
+management:
+   security:
+      enabled: false
+spring:
+   main:
+      banner-mode: "off"
+      allow-bean-definition-overriding: true
+   application:
+      name: junit5play
+
+---
+   
+spring:
+  profiles: local
+  
+---
+
+spring:
+   profiles: staging
+   
+---
+
+spring:
+   profiles: production
